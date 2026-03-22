@@ -4,12 +4,10 @@ metadata:
   name: backend-service
   namespace: frontend-namespace
 spec:
+  type: ClusterIP        
   selector:
     app: backend
   ports:
-  - port: 4000
-    targetPort: 4000
-    type: ClusterIP
-
-     
-  
+    - protocol: TCP
+      port: 4000
+      targetPort: 4000
