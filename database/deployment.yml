@@ -38,7 +38,7 @@ spec:
             claimName: database-pvc
         - name: init-sql
           configMap:
-            name: mysql-initdb
+            name: database-config
                
 
           
